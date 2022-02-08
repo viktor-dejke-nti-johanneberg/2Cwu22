@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(39, 39, 39);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    height: 50%;
+    background-color: darkgreen;
+    font-size: xx-large;
+}
