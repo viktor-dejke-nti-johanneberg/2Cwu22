@@ -1,12 +1,66 @@
-body{
-    background-color: rgb(39, 39, 39);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+html{
+    scroll-behavior: smooth;
 }
 
 a{
-    height: 50%;
-    background-color: darkgreen;
-    font-size: xx-large;
+    text-decoration: none;
+    color: black;
 }
+
+/*Mobile Version*/
+ @media screen and (max-width:500px){
+    body{
+        background-color: rgb(255, 244, 244);
+        height: auto;
+        margin: 0;
+        padding: 0%;
+        width: 100%;
+    }
+
+    
+
+    #container1{
+        display: grid;
+        margin: 0;
+        grid-template-areas: 
+        'hd'
+        'mn'
+        'ft';
+        grid-template-rows: 100px auto 80px;
+
+    }
+
+    #headermobile{
+        width: 100%;
+        grid-area: hd;
+        background-color: rgb(1, 70, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #homebutton{
+        height: 100%;
+    }
+
+    #logo{
+        background-image: url(../img/Ullevi_logga_v2.png) ;
+        width: 100px;
+        height: 100px;
+    }
+
+    #logomobile{
+        height: 100%;
+    }
+    #menubutton{
+        cursor: pointer;
+        position: fixed;
+        left: 8vw;
+    }
+
+    #headerdesktop{
+        display: none;
+    }
+
+
+ }
