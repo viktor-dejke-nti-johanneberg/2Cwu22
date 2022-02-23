@@ -26,36 +26,48 @@ a{
         'hd'
         'mn'
         'ft';
-        grid-template-rows: 100px auto 80px;
+        grid-template-rows: 12vh auto 15vh;
 
     }
 
     #headermobile{
         width: 100%;
         grid-area: hd;
-        background-color: rgb(1, 70, 1);
+        background-color: rgb(2, 87, 2);
         display: flex;
         justify-content: center;
         align-items: center;
     }
     
-    #homebutton{
-        height: 100%;
+    #homebutton, #linkhomebutton{
+        height: 50%;
+        width: 50%;
     }
 
     #logo{
-        background-image: url(../img/Ullevi_logga_v2.png) ;
-        width: 100px;
-        height: 100px;
+        background-image: url(../img/Ullevi_logga_v2.png);
+        background-size: contain;
+        height: 12vh;
+        width: 12vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    #logomobile{
-        height: 100%;
-    }
     #menubutton{
-        cursor: pointer;
+        height: 10vh;
+        width: 10vh ;
         position: fixed;
-        left: 8vw;
+        left: 6vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .material-icons{
+        cursor: pointer;
+        font-size: 5vh !important;
+        color: azure;
     }
 
     #headerdesktop{
