@@ -10,41 +10,40 @@ a{
 /*Mobile Version*/
  @media screen and (max-width:500px){
     body{
-        background-color: rgb(255, 244, 244);
+        background-color: azure;
         height: auto;
         margin: 0;
         padding: 0%;
         width: 100%;
     }
 
-    
-
-    #container1{
+    .container{
         display: grid;
         margin: 0;
         grid-template-areas: 
         'hd'
         'mn'
         'ft';
-        grid-template-rows: 12vh auto 15vh;
-
+        grid-template-rows: 12vh auto 25vh;
     }
 
-    #headermobile{
+    .headermobile{
         width: 100%;
         grid-area: hd;
         background-color: rgb(2, 87, 2);
         display: flex;
         justify-content: center;
         align-items: center;
+        position: sticky;
+        top: 0;
     }
     
-    #homebutton, #linkhomebutton{
+    .homebutton, .linkhomebutton{
         height: 50%;
         width: 50%;
     }
 
-    #logo{
+    .logo{
         background-image: url(../img/Ullevi_logga_v2.png);
         background-size: contain;
         height: 12vh;
@@ -54,14 +53,16 @@ a{
         align-items: center;
     }
 
-    #menubutton{
-        height: 10vh;
-        width: 10vh ;
-        position: fixed;
-        left: 6vw;
+    .menubutton{
+        position: absolute;
+        left: 8vw;
+        top: 3.5vh;
+        height: 5vh;
+        width: 5vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 0;
     }
 
     .material-icons{
@@ -70,9 +71,117 @@ a{
         color: azure;
     }
 
-    #headerdesktop{
+    .cross, #close{
+        position: absolute;
+        right: 3vw;
+        top: 2vw;
+    }
+
+    .navmobile{
+        position: fixed;
+        width: 100vW;
+        left: 0;
+        height: 63vh;
+        top: -90vh;
+        transition: top 0.5s;
+        background-color: rgb(2, 87, 2);
+        z-index: 10;
+        padding-bottom: 2vh;
+    }
+
+    .show{
+        top: 0;
+    }
+
+    .fade-layer{
+        z-index: 5;
+        background-color: rgba(0, 0, 0, 0.35);
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .visible{
+        display: block;
+    }
+
+    ul{
+        list-style: none;
+        font-size: 3.5vh;
+        height: 63vh;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'inconsolata', monospace;
+    }
+
+    #contactus{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .listitem{
+        display: flex;
+        text-decoration: none;
+        width: 100%;
+        height: 18%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menuitem{
+        color: azure;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .line{
+        height: 1px;
+        border-bottom: azure 1px solid;
+        width: 72%;
+    }
+
+    .headerdesktop{
         display: none;
     }
 
+    .mobilemain{
+        grid-area: mn;
+        display: flex;
+        justify-content: center;
+        grid-template-areas: 
+        'news'
+        'train'
+        'parents'
+        'about';
+    }
 
+    .rubriken{
+        font-family: 'Oxygen', sans-serif;
+        font-size: 4vh;
+        text-align: center;
+        width: 90vw;
+        margin-top: 4.5vh;
+    }
+
+    
+    footer{
+        grid-area: ft;
+        background-color: rgb(2, 87, 2);
+        
+    }
  }

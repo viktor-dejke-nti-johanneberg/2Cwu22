@@ -7,26 +7,73 @@
     <link rel="icon" href="./img/Ullevi_logga_v2.png">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Oxygen:wght@300;400&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
     <title>Ullevi Vikingen FK</title>
 </head>
 <body>
-    <div id="container1">
-        <header id="headermobile">
-            <div id="logo">
-                <a id="linkhomebutton" href="/index.html"><div id="homebutton"></div></a>
-            </div>
-            <div id="menubutton">
+    <div class="fade-layer"></div>
+    <div class="container">
+
+        <header class="headermobile">
+            <div class="menubutton">
                 <i class="material-icons">menu</i>
             </div>
-        </header>
-        <header id="headerdesktop">
-            <a href="./about.html">Om föreningen</a>
-            <a href="./index.html">Startsida</a>
-            <a href="./parents.html">För föräldrar</a>
-            <a href="./train.html">Börja träna</a>
-            <a href="./funk.html">Funktionärer</a>
+            <div class="logo">
+                <a class="linkhomebutton" href="/index.html"><div id="homebutton"></div></a>
+            </div>
         </header>
 
+        <nav class="navmobile">
+            <div class="cross">
+                <i class="material-icons" id="close">close</i>
+            </div>
+            <ul>
+                <li class="listitem"><a class="menuitem" href="/index.html">Startsida</a></li>
+                <span class="line" style="line-height: 1px;"></span>
+                <li class="listitem"><a class="menuitem" href="/about.html">Om föreningen</a></li>
+                <span class="line" style="line-height: 1px;"></span>
+                <li class="listitem"><a class="menuitem" href="/parents.html">För föräldrar</a></li>
+                <span class="line" style="line-height: 1px;"></span>
+                <li class="listitem"><a class="menuitem" href="/train.html">Börja träna</a></li>
+                <span class="line" style="line-height: 1px;"></span>
+                <li class="listitem"><a class="menuitem" href="/funk.html">För funktionärer</a></li>
+                <span class="line" style="line-height: 1px;"></span>
+                <li class="listitem"><div id="contactus"><a class="menuitem" href="#footer">Kontakta oss</a></div></li>
+
+            </ul>
+        </nav>
+
+        <header class="headerdesktop">
+            <nav class="navdesktop">
+                <a href="./about.html">Om föreningen</a>
+                <a href="./index.html">Startsida</a>
+                <a href="./parents.html">För föräldrar</a>
+                <a href="./train.html">Börja träna</a>
+                <a href="./funk.html">Funktionärer</a>
+            </nav>
+        </header>
+
+        <main class="mobilemain">
+            <h1 class="rubriken">Ullevi Vikingen Friidrottsklubb</h1>
+            <section id="news">
+
+            </section>
+        </main>
+
+        <footer id="footer">
+            POSTADRESS:
+            IK Vikingen - Friidrott
+            Klubbhuset, Margretebergsgatan 6
+            41319 Göteborg
+
+            KONTAKT:
+            Tel: [saknas] Information
+            E-post: vikingen@ullevi.nu
+        </footer>
     </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
