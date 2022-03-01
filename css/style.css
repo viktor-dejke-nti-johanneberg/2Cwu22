@@ -38,19 +38,14 @@ a{
         top: 0;
     }
     
-    .homebutton, .linkhomebutton{
-        height: 50%;
-        width: 50%;
+    .linkhomebutton{
+        height: 7vh;
+        width: 7vh;
     }
 
     .logo{
-        background-image: url(../img/Ullevi_logga_v2.png);
-        background-size: contain;
-        height: 12vh;
-        width: 12vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 100%;
+        width: 100%;
     }
 
     .menubutton{
@@ -184,4 +179,13 @@ a{
         background-color: rgb(2, 87, 2);
         
     }
+ }
+
+
+ @media screen and (min-width:501px){
+    
+    .headermobile{
+        display: none;
+    }
+
  }
