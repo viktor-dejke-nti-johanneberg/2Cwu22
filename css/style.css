@@ -30,7 +30,7 @@ a{
     .headermobile{
         width: 100%;
         grid-area: hd;
-        background-color: rgb(2, 87, 2);
+        background-color: rgb(0, 65, 0);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -79,9 +79,10 @@ a{
         height: 63vh;
         top: -90vh;
         transition: top 0.5s;
-        background-color: rgb(2, 87, 2);
+        background-color: rgb(0, 65, 0);
         z-index: 10;
         padding-bottom: 2vh;
+        padding-top: 3vh;
     }
 
     .show{
@@ -163,6 +164,7 @@ a{
         'train'
         'parents'
         'about';
+        grid-template-columns: 1fr;
     }
 
     .rubriken{
@@ -173,10 +175,20 @@ a{
         margin-top: 4.5vh;
     }
 
+    #news{
+        grid-area: news;
+    }
+
+    .fb-page{
+        width: 100% !important;
+        display: none !important;
+        height: 100% !important;
+    }
+
     
     footer{
         grid-area: ft;
-        background-color: rgb(2, 87, 2);
+        background-color: rgb(0, 65, 0);
         
     }
  }
@@ -186,6 +198,10 @@ a{
     
     .headermobile{
         display: none;
+    }
+
+    .fb_page{
+        width: 100vw;
     }
 
  }
