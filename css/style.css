@@ -75,6 +75,7 @@ a{
         position: absolute;
         right: 3vw;
         top: 2vw;
+        z-index: 15;
     }
 
     .navmobile{
@@ -156,7 +157,7 @@ a{
         width: 72%;
     }
 
-    #mobilemain{
+    #mobilemainstart{
         grid-area: mn;
         display: grid;
         grid-template-areas: 
@@ -164,7 +165,8 @@ a{
         'news'
         'train'
         'parents'
-        'about';
+        'about'
+        'funktionarer';
     }
 
     .mainrubriker{
@@ -176,6 +178,7 @@ a{
     .maintxt, .readmore{
         font-size: 2.4vh;
         font-family: 'Roboto', sans-serif;
+        font-weight: 300;
     }
 
     .maintxt{
@@ -217,7 +220,7 @@ a{
         grid-area: news;
     }
 
-    #train, #parents, #about{
+    #train, #parents, #about, #funktionarer, #formbox{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -236,23 +239,38 @@ a{
         grid-area: about;
     }
 
-    #mobilemain2{
+    #funktionarer{
+        grid-area: funktionarer;
+    }
 
+    #form{
+        padding: 5vw;
+        background-color: rgb(0, 65, 0);
+        border-radius: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color: azure;
+        font-size: 2vh;
     }
 
     footer{
         grid-area: ft;
         background-color: rgb(0, 65, 0);
         color: azure;
-        padding: 5vh;
+        padding: 6vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         font-family: 'Roboto Condensed', sans-serif;        
     }
 
     .footerrubrik{
         font-size: 2.5vh;
+        margin: 0;
+    }
+
+    .footertxt{
+        font-size: 2vh;
         margin: 0;
     }
 
