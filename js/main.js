@@ -1,11 +1,15 @@
 //Mobile Nav code
-document.querySelector(".material-icons").addEventListener("click", showMenu);
-document.querySelector(".fade-layer").addEventListener("click", showMenu);
-document.querySelector(".cross").addEventListener("click", showMenu);
-document.querySelector("#contactus").addEventListener("click", showMenu);
+document.querySelector(".material-icons").addEventListener("click", showMenumobile);
+document.querySelector(".fade-layer").addEventListener("click", showMenumobile);
+document.querySelector(".cross").addEventListener("click", showMenumobile);
+document.querySelector("#contactus").addEventListener("click", showMenumobile);
 
-function showMenu(){
+function showMenumobile(){
     document.querySelector(".navmobile").classList.toggle("show");
     document.querySelector(".fade-layer").classList.toggle("visible");
+}
+
+function showMenudesktop(){
+
 }
 
