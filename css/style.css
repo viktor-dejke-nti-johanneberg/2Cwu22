@@ -18,11 +18,7 @@ body{
 /*Mobile Version*/
  @media screen and (max-width:500px){
 
-    .headerdesktop{
-        display: none;
-    }
-
-    #desktopmainstart{
+    #desktopmainstart, .navdesktop, .headerdesktop{
         display: none;
     }
     
@@ -280,7 +276,7 @@ body{
 
  }
 
-
+/*Desktop Version*/
  @media screen and (min-width:501px){
     
     .headermobile{
@@ -294,6 +290,78 @@ body{
     .headerdesktop{
         background-color: rgb(0, 65, 0);
         height: 20vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+
+    .headeritem{
+        flex: 1;
+        text-align: center;
+        color: azure;
+    }
+    
+    .logga{
+        height: 10vh;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    .fade-layerdesk{
+        z-index: 5;
+        background-color: rgb(0, 0, 0, 0);
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .material-icons{
+        cursor: pointer;
+        font-size: 7vh !important;
+        color: azure;
+    }
+
+    .menubuttondesk{
+        position: absolute;
+        left: 3vw;
+        top: 6vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .crossdesk, #close{
+        position: absolute;
+        right: 1vw;
+        top: 1vh;
+        z-index: 15;
+    }
+
+    .navdesktop{
+        position: fixed;
+        left: -60vw;
+        top: 0;
+        background-color: rgb(0, 65, 0);
+        transition: 0.7s;
+        z-index: 10;
+        height: 100vh;
+        width: 30vw;
+    }
+
+    
+
+    .showdesktop{
+        left: 0;
+    }
+
+    .visibledesktop{
+        display: block;
     }
 
     #mobilemainstart{
@@ -304,22 +372,39 @@ body{
         display: grid;
         grid-template-areas: 
         'news train faceb'
-        'news about faceb';
-        grid-template-rows: 4fr 6fr;
-        grid-template-columns: 40vw 35vw 1fr;
-        grid-gap: 10px;
+        'news about faceb'
+        'funk peren peren';
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 5fr 4fr 2fr;
+        grid-gap: 2vw;
+        padding: 2vw;
     }
 
     .mainarticles{
         background-color: azure;
         border: 2px solid rgb(0, 65, 0);
         padding: 2vw;
+        border-radius: 5px;
     }
 
     .mainrubriker{
         font-size:5vh;
         font-family: 'Roboto Condensed', sans-serif;    
         text-align: center;    
+    }
+
+    .maintxt{
+        padding: 1vw;
+    }
+
+    .readmore{
+        text-decoration: underline;
+        text-align: right;
+        width: 100%;
+    }
+
+    .readmore:hover{
+        color: rgb(87, 87, 87);
     }
 
     #news{
