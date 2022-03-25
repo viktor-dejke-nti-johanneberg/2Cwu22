@@ -10,12 +10,16 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto+Condensed&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">    <title>Om oss</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Roboto+Condensed&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <title>Om oss</title>
 </head>
 
 <body>
 
     <div class="fade-layer"></div>
+    <div class="fade-layerdesk"></div>
     <div class="container">
 
         <header class="headermobile">
@@ -32,36 +36,65 @@
             </div>
             <ul>
                 <li class="listitem"><a class="menuitem" href="/index.html">Startsida</a></li>
-                <span class="line" style="line-height: 1px;"></span>
+                <span class="line"></span>
                 <li class="listitem"><a class="menuitem" href="/about.html">Om föreningen</a></li>
-                <span class="line" style="line-height: 1px;"></span>
+                <span class="line"></span>
                 <li class="listitem"><a class="menuitem" href="/parents.html">För föräldrar</a></li>
-                <span class="line" style="line-height: 1px;"></span>
+                <span class="line"></span>
                 <li class="listitem"><a class="menuitem" href="/train.html">Börja träna</a></li>
-                <span class="line" style="line-height: 1px;"></span>
+                <span class="line"></span>
                 <li class="listitem"><a class="menuitem" href="/funk.html">För funktionärer</a></li>
-                <span class="line" style="line-height: 1px;"></span>
+                <span class="line"></span>
                 <li class="listitem"><a class="menuitem" id="contactus" href="#footer">Kontakta oss</a></li>
             </ul>
         </nav>
 
+
+
         <header class="headerdesktop">
-            <nav class="navdesktop">
-                <a href="./about.html">Om föreningen</a>
-                <a href="./index.html">Startsida</a>
-                <a href="./parents.html">För föräldrar</a>
-                <a href="./train.html">Börja träna</a>
-                <a href="./funk.html">Funktionärer</a>
-            </nav>
+            <div class="menubuttondesk">
+                <i class="material-icons">menu</i>
+            </div>
+            <a class="headeritem" href="./about.html">Om föreningen</a>
+            <a class="headeritem" href="./parents.html">För föräldrar</a>
+            <a href="index.html"><img class="logga" src="img/Ullevi_logga_v2.png" alt="Ullevi Logga"></a>
+            <a class="headeritem" href="./train.html">Börja träna</a>
+            <a class="headeritem" href="./funk.html">Funktionärer</a>
         </header>
+
+        <nav class="navdesktop">
+            <div class="crossdesk">
+                <i class="material-icons" id="close">close</i>
+            </div>
+            <h2 class="navh">Meny</h2>
+            <ul class="thelist">
+                <li class="listitem"><a class="menuitem" href="/index.html">Startsida</a></li>
+                <span class="line"></span>
+                <li class="listitem"><a class="menuitem" href="/about.html">Om föreningen</a></li>
+                <span class="line"></span>
+                <li class="listitem"><a class="menuitem" href="/parents.html">För föräldrar</a></li>
+                <span class="line"></span>
+                <li class="listitem"><a class="menuitem" href="/train.html">Börja träna</a></li>
+                <span class="line"></span>
+                <li class="listitem"><a class="menuitem" href="/funk.html">För funktionärer</a></li>
+                <span class="line"></span>
+                <li class="listitem"><a class="menuitem" id="contactusdesk" href="#footer">Kontakta oss</a></li>
+            </ul>
+        </nav>
 
         <main>
             <h1 class="rubriken">Om föreningen</h2>
-            <article class="mainarticles">
-                <h2 class="mainrubriker">Historia</h2>
-                <p class="maintxt">De träffades kl 19 på Lovisa Linds kafé på Stigbergstorget 1.Till en början spelade man mest fotboll och utövade allmän idrott på "Sketänga" i Majorna. 1921 flyttade man till Nya Varvets Idrottsplats och friidrotten började ta över.</p>
-                <p class="maintxt">Friidrottsstjärnorna började dyka upp. Martin Gustavsson, Gustaf Karlsson, hinderkämpen Jan-Erik Karlsson, EM-2:an i tresteg Bertil Jonsson, Sture Landqvist, häcklöparen Leif Librand, Ulf Högberg, Ulf Jarfeldt, Åke Fransson, Christer Garpenborg, Anna Söderberg och Patrik Torkelsson har alla tävlat i IK Vikingens färger liksom en av Sveriges störste friidrottare genom tiderna, Patrik Sjöberg.</p>
-            </article>
+                <article class="mainarticles">
+                    <h2 class="mainrubriker">Historia</h2>
+                    <p class="maintxt">De träffades kl 19 på Lovisa Linds kafé på Stigbergstorget 1.Till en början
+                        spelade man mest fotboll och utövade allmän idrott på "Sketänga" i Majorna. 1921 flyttade man
+                        till Nya Varvets Idrottsplats och friidrotten började ta över.</p>
+                    <p class="maintxt">Friidrottsstjärnorna började dyka upp. Martin Gustavsson, Gustaf Karlsson,
+                        hinderkämpen Jan-Erik Karlsson, EM-2:an i tresteg Bertil Jonsson, Sture Landqvist, häcklöparen
+                        Leif Librand, Ulf Högberg, Ulf Jarfeldt, Åke Fransson, Christer Garpenborg, Anna Söderberg och
+                        Patrik Torkelsson har alla tävlat i IK Vikingens färger liksom en av Sveriges störste
+                        friidrottare genom tiderna, Patrik Sjöberg.</p>
+                </article>
         </main>
 
 
@@ -69,13 +102,14 @@
             <span>
                 <h3 class="footerrubrik">POSTADRESS:</h3>
                 <p class="footertxt">IK Vikingen - Friidrott <br>
-                Klubbhuset, Margretebergsgatan 6 <br>
-                41319 Göteborg</p>
+                    Klubbhuset, Margretebergsgatan 6 <br>
+                    41319 Göteborg
+                </p>
             </span>
             <span>
                 <h3 class="footerrubrik">KONTAKT:</h3>
-                <p class="footertxt"> 
-                    Tel:  <br>
+                <p class="footertxt">
+                    Tel: <br>
                     E-post: vikingen@ullevi.nu
                 </p>
             </span>
