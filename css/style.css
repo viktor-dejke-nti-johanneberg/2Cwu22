@@ -8,7 +8,7 @@ a{
 }
 
 body{
-    background-color: azure;
+    background-color: rgb(165, 165, 165);
     height: auto;
     margin: 0;
     padding: 0%;
@@ -245,7 +245,7 @@ body{
         grid-area: funktionarer;
     }
 
-    #form{
+    .form{
         padding: 5vw;
         background-color: rgb(0, 65, 0);
         border-radius: 10px;
@@ -359,11 +359,13 @@ body{
         position: fixed;
         left: -60vw;
         top: 0;
-        background-color: rgb(0, 65, 0);
-        transition: 0.7s;
+        background-color: rgb(0, 70, 0);
+        transition: 0.6s;
         z-index: 10;
         height: 100vh;
         width: 25vw;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
     }
 
     .navh{
@@ -422,13 +424,118 @@ body{
         display: none;
     }
 
+    #desktopmainstart, #desktopmainabout, #desktopmainparents, #desktopmaintrain, #desktopmainfunk{
+        row-gap: 2vw;
+        padding: 2vw;
+    }
+
     #desktopmainstart{
         display: grid;
         grid-template-areas: 
+        'rub'
         'sec1'
         'sec2';
+    }
+
+    #desktopmainparents{
+        display: grid;
+        grid-template-areas: 
+        'rub'
+        'info'
+        'safe';
+    }
+
+    #desktopmaintrain{
+        display: grid;
+        grid-template-areas: 
+        'rub rub'
+        'leftsec rightsec';
+        column-gap: 2vw;
+        grid-template-columns: 4fr 5fr;
+    }
+
+    #desktopmainfunk{
+        display: grid;
+        grid-template-areas: 
+        'rub rub'
+        'funkinfo morefunk'
+        'funkform morefunk';
+        column-gap: 2vw;
         row-gap: 2vw;
-        padding: 2vw;
+    }
+
+    #funkinfo{
+        grid-area: funkinfo;
+    }
+
+    #funkform{
+        grid-area: funkform;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #morefunk{
+        grid-area: morefunk;
+    }
+
+    #leftsec{
+        display: grid;
+        grid-template-areas: 
+        'formbox'
+        'descrip';
+        row-gap: 2vw;
+    }
+
+    #rightsec{
+        display: grid;
+        grid-template-areas:  
+        'camp'
+        'group';
+        row-gap: 2vw;
+    }
+
+    #formbox{
+        grid-area: formbox;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .form{
+        border-radius: 15px;
+        background-color: rgb(0, 65, 0);
+        width: 5vw;
+        text-align: center;
+        padding: 1vh;
+        color: azure;
+    }
+
+    .form:hover{
+        background-color: rgb(0, 54, 0);
+        color: rgb(255, 255, 255);
+    }
+
+    #descrip{
+        grid-area: descrip;
+    }
+
+    #info{
+        grid-area: info;
+    }
+
+    #safe{
+        grid-area: safe;
+    }
+
+   
+    .rubriken{
+        font-family: 'Roboto Condensed', sans-serif;
+        grid-area: rub;
+        text-align: center;
+        font-size: 7vh;
     }
 
     .mainarticles{
@@ -454,6 +561,7 @@ body{
         text-decoration: underline;
         text-align: center;
         width: 100%;
+        padding: 1vw;
     }
 
     .readmore:hover{
