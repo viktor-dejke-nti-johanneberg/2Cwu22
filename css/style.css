@@ -4,11 +4,10 @@ html{
 
 a{
     text-decoration: none;
-    color: black;
 }
 
 body{
-    background-color: rgb(165, 165, 165);
+    background-color: rgb(231, 231, 231);
     height: auto;
     margin: 0;
     padding: 0%;
@@ -132,6 +131,7 @@ body{
         padding: 0;
         display: flex;
         align-items: center;
+        color: azure !important;
     }
 
     .listitem{
@@ -190,6 +190,7 @@ body{
     .readmore{
         text-decoration: underline;
         font-size: 2.7vh;
+        color: black;
     }
 
     .rubriken{
@@ -216,6 +217,7 @@ body{
         border: 3px ridge rgb(0, 0, 0);
         border-radius: 15px;
         margin-bottom: 4vh;
+        background-color: azure;
     }
 
     #news{
@@ -243,6 +245,13 @@ body{
 
     #funktionarer{
         grid-area: funktionarer;
+    }
+
+    #funkform{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .form{
@@ -274,6 +283,7 @@ body{
     .footertxt{
         font-size: 2vh;
         margin: 0;
+        color: azure !important;
     }
 
  }
