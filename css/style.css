@@ -70,7 +70,7 @@ body{
         color: azure;
     }
 
-    .cross, #close{
+    .cross, #closemobile{
         position: absolute;
         right: 3vw;
         top: 2vw;
@@ -201,7 +201,7 @@ body{
         margin-top: 2vh;
     }
 
-    #pic{
+    .pic{
         grid-area: pic;
         width: 100vw;
         border-bottom-left-radius: 9px;
@@ -220,7 +220,7 @@ body{
         background-color: azure;
     }
 
-    #news{
+    #newsmobile{
         grid-area: news;
     }
 
@@ -291,11 +291,7 @@ body{
 /*Desktop Version*/
  @media screen and (min-width:501px){
     
-    .headermobile{
-        display: none;
-    }
-
-    .navmobile{
+    .headermobile, #mobilemainstart, .navmobile{
         display: none;
     }
 
@@ -430,9 +426,7 @@ body{
         display: block;
     }
 
-    #mobilemainstart{
-        display: none;
-    }
+    
 
     #desktopmainstart, #desktopmainabout, #desktopmainparents, #desktopmaintrain, #desktopmainfunk{
         row-gap: 2vw;
@@ -595,7 +589,7 @@ body{
         grid-area: sec2;
     }
 
-    #news{
+    #newsdesktop{
         grid-area: news;
         display: flex;
         flex-direction: column;
@@ -603,11 +597,11 @@ body{
         align-items: center;
     }
 
-    #pic{
+    .pic{
         height: 20vh;
     }
 
-    #train{
+    #traindesk{
         grid-area: train;
     }
 
