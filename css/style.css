@@ -124,6 +124,10 @@ body{
         font-family: 'inconsolata', monospace;
     }
 
+    #listgroups{
+        font-size: 5vw;
+    }
+
     #contactus{
         height: 100%;
         width: 100%;
@@ -169,6 +173,14 @@ body{
         'parents'
         'about'
         'funktionarer';
+    }
+
+    #figuremain{
+        width: 50vw;
+    }
+
+    h3{
+        text-align: center;
     }
 
     .mainrubriker{
@@ -284,6 +296,7 @@ body{
         font-size: 2vh;
         margin: 0;
         color: azure !important;
+        text-align: center;
     }
 
  }
